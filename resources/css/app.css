@@ -1,0 +1,277 @@
+@import 'bootstrap';
+
+:root {
+  /* --- Palette Principale --- */
+  --color-primary-sabbia: #E2D1B3;
+  /* Sabbia Caldo (Sfondi/Sezioni) */
+  --color-secondary-tortora: #8E8477;
+  /* Tortora (Dettagli/Testi secondari) */
+  --color-accent-nero: #1A1A1A;
+  /* Nero Opaco (Testi principali/Icone) */
+
+  /* --- Varianti di Supporto --- */
+  --color-bg-light: #F9F7F2;
+  /* Panna chiarissimo (Sfondo pagina) */
+  --color-white: #FFFFFF;
+  /* Bianco puro (Contenitori/Card) */
+  --color-muted: #D1C4B1;
+  /* Sabbia desaturato (Bordi/Dividers) */
+
+  /* --- Funzionalità --- */
+  --color-cta-hover: #333333;
+  /* Nero più morbido per hover */
+  --font-main: 'Inter', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: var(--color-bg-light);
+  color: var(--color-accent-nero);
+  font-family: var(--font-main);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-accent-nero);
+  font-weight: 700;
+  text-transform: uppercase;
+  /* Per un tocco più minimal/tecnico */
+  letter-spacing: 1px;
+}
+
+.section-hero {
+  background-color: var(--color-primary-sabbia);
+  padding: 80px 20px;
+}
+
+.card-pavimento {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-muted);
+  transition: all 0.3s ease;
+}
+
+/* Il pulsante "Richiedi Preventivo" */
+.btn-primary {
+  background-color: var(--color-accent-nero);
+  color: var(--color-white);
+  padding: 12px 24px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-secondary-tortora);
+}
+
+/* navbar */
+
+.logo-custom {
+    height: 50px;    /* Regola l'altezza come preferisci */
+    width: auto;     /* Mantiene le proporzioni */
+    object-fit: contain;
+}
+
+
+.custom-navbar {
+  /* Usiamo il colore pieno della root senza trasparenze */
+  background-color: var(--color-accent-nero) !important;
+
+  /* Aggiungiamo un'ombra sottile per dare profondità quando si sovrappone ai contenuti */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  /* Rimuoviamo eventuali filtri di sfocatura se presenti */
+  backdrop-filter: none !important;
+
+  border-bottom: 2px solid var(--color-secondary-tortora);
+  padding: 0.8rem 0;
+}
+
+/* Assicuriamoci che i link siano ben visibili sullo sfondo pieno */
+.custom-navbar .nav-link {
+  color: var(--color-bg-light) !important;
+  opacity: 1 !important;
+  /* Forza l'opacità del testo al 100% */
+}
+
+
+
+/* homepage */
+
+
+.hero-edil {
+  /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://images.unsplash.com/photo-1523413555809-0fb1d4da238d?q=80&w=1920'); */
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+}
+
+.bg-sabbia {
+  background-color: var(--color-primary-sabbia);
+}
+
+.text-sabbia {
+  color: var(--color-primary-sabbia) !important;
+}
+
+.tracking-widest {
+  letter-spacing: 5px;
+}
+
+/* Effetto sulla foto centrale */
+.shadow-lg {
+  transition: transform 0.5s ease;
+}
+
+.shadow-lg:hover {
+  transform: scale(1.01);
+}
+
+/* --- PAGINA 404 CUSTOM --- */
+
+.text-nero-opaco {
+  color: var(--color-accent-nero);
+}
+
+/* Bottone Principale 404 */
+.btn-custom-primary {
+  background-color: var(--color-accent-nero);
+  color: var(--color-primary-sabbia);
+  border: none;
+  padding: 12px 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-custom-primary:hover {
+  background-color: var(--color-secondary-tortora);
+  color: var(--color-white);
+}
+
+/* Bottone Outline 404 */
+.btn-custom-outline {
+  background-color: transparent;
+  color: var(--color-accent-nero);
+  border: 2px solid var(--color-secondary-tortora);
+  padding: 12px 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-custom-outline:hover {
+  border-color: var(--color-accent-nero);
+  background-color: var(--color-bg-light);
+}
+
+
+
+
+
+/* --- chi siamo --- */
+
+.bg-nero-opaco {
+  background-color: var(--color-accent-nero);
+}
+
+.text-sabbia {
+  color: var(--color-primary-sabbia) !important;
+}
+
+.uppercase-text {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Filtro per l'immagine laterale per renderla più professionale */
+.grayscale-filter {
+  filter: contrast(1.1) brightness(0.9);
+  border: 1px solid var(--color-muted);
+}
+
+/* Immagini Team */
+.team-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 2px;
+  /* Angoli quasi netti come il brand */
+  transition: filter 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.team-card:hover .team-img {
+  filter: grayscale(0%);
+}
+
+.border-sabbia-thick {
+  border: 4px solid var(--color-primary-sabbia);
+}
+
+.team-card h5 {
+  color: var(--color-accent-nero);
+  letter-spacing: 1px;
+}
+
+
+/* --- contatti --- */
+
+
+.text-sabbia {
+  color: var(--color-primary-sabbia) !important;
+}
+
+.text-nero-opaco {
+  color: var(--color-accent-nero);
+}
+
+/* Stile Form */
+.custom-input {
+  border: 1px solid var(--color-muted);
+  border-radius: 2px;
+  padding: 12px;
+}
+
+.custom-input:focus {
+  border-color: var(--color-secondary-tortora);
+  box-shadow: 0 0 0 0.25rem rgba(142, 132, 119, 0.1);
+}
+
+/* Social Buttons */
+.btn-social-custom {
+  border: 1px solid var(--color-muted);
+  color: var(--color-secondary-tortora);
+  transition: all 0.3s ease;
+}
+
+.btn-social-custom:hover {
+  background-color: var(--color-accent-nero);
+  color: var(--color-primary-sabbia);
+}
+
+/* Alert Success */
+.alert-custom-success {
+  background-color: var(--color-primary-sabbia);
+  color: var(--color-accent-nero);
+  border: none;
+  font-weight: bold;
+}
