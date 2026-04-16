@@ -3,8 +3,9 @@
     "private": true,
     "type": "module",
     "scripts": {
+        "dev": "vite",
         "build": "vite build",
-        "dev": "vite"
+        "vercel-build": "echo 'No build needed for PHP runtime'"
     },
     "devDependencies": {
         "@popperjs/core": "^2.11.8",
