@@ -7,7 +7,7 @@
         <section class="hero-section text-center py-5 bg-nero-opaco text-white">
             <div class="container">
                 <h1 class="display-3 fw-bold uppercase-text">Solida Esperienza, <span class="text-sabbia">Posa Perfetta</span></h1>
-                <p class="lead opacity-75">Dal 2026, trasformiamo superfici grezze in capolavori di design e durabilità.</p>
+                <p class="lead opacity-75">Dal 2026, trasformiamo superfici grezze in Capolavori di design e durabilità.</p>
             </div>
         </section>
 
