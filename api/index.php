@@ -16,9 +16,10 @@ foreach ($paths as $path) {
 }
 
 // 2. Forziamo Laravel a usare /tmp per tutto ciò che è scrittura
-putenv("APP_STORAGE=$baseTmp/storage");
-putenv("VIEW_COMPILED_PATH=$baseTmp/storage/framework/views");
-putenv("BOOTSTRAP_CACHE_PATH=$baseTmp/bootstrap/cache");
+// Assicurati che i nomi delle variabili corrispondano esattamente a quelle di Laravel
+putenv("APP_STORAGE=" . $baseTmp . "/storage");
+putenv("VIEW_COMPILED_PATH=" . $baseTmp . "/storage/framework/views");
+putenv("BOOTSTRAP_CACHE_PATH=" . $baseTmp . "/bootstrap/cache");
 putenv("LOG_CHANNEL=stderr");
 putenv("SESSION_DRIVER=cookie");
 
